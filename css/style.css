@@ -1,0 +1,1092 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Gotham', sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+/* navigation bar */
+header .navbar {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-around;
+    color: #fff;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    transition: background-color 0.4s ease-in-out;
+    z-index: 99;
+}
+header nav.scrolled{
+    background-color: #0E0E0E;
+    opacity: 0.9;
+    padding: 30px;
+    transition: all 0.6s ease-in-out;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo img{
+    width: 66px;
+    height: 46px;
+    margin-right: 10px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 70%;
+    justify-content: space-between;
+}
+.navbar ul li{
+    margin-left: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+.navbar ul li a:hover{
+    text-decoration: none;
+    color: #FF6000;
+    font-size: 1em;
+}
+.navbar ul li:nth-child(6) a{
+    display: flex;
+    padding: 9px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #FF6000 20.67%, #FF1F00 78.21%);
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #FF6000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+.navbar ul li:nth-child(6) a:hover{
+    display: flex;
+    padding: 9px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid #FF6000;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FF6000;
+}
+/* end navigation-bar */
+
+/* main-content */
+/* content bg-header */
+main #beranda .content-bg{
+    background-image:url(../Image/Bg-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    display: flex;
+}
+.content-bg article{
+    flex-direction: column;
+    width: 90%;
+    text-align: right;
+    color: #fff;
+    margin: auto;
+}
+main .content-text-bg h1{
+    font-size: 65px;
+    margin-bottom: 8px; 
+}
+main .content-text-bg h4{
+    font-size: 25px;
+}
+main .content-text-bg p{
+    line-height: 20px;
+    text-align: right;
+    margin-bottom: 4px;
+}
+main .content-text-bg a{
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #FF6000 20.67%, #FF1F00 78.21%);
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #FF6000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+main .content-text-bg a:hover{
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background: transparent;
+    color:#FF6000;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #FF6000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* content divisi */
+.content-divisi{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 210px;
+    position: absolute;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 2px 16px 27px 0px rgba(0, 0, 0, 0.30);
+    top:560px;
+    left: 270px;
+}
+.content-divisi article .headline{
+    text-align: center;
+}
+.content-divisi article h3{
+    padding-top: 20px;
+}
+.content-divisi article p{
+    color: #696969;
+    padding-top: 5px;
+}
+.content-image-divisi{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 10px;
+}
+.content-image-divisi img{
+    width: 100px;
+}
+/* end content-divisi */
+
+/* content visi misi*/
+.content-visi-misi{
+    margin: 150px 120px 50px;
+}
+.content-visi-misi .headline{
+    text-align: center;
+}
+.content-visi-misi .headline p{
+    color: #696969;
+    padding-top: 8px;
+}
+.content-visi-misi .visi-misi{
+    display: flex;
+    text-align: justify;
+}
+.content-visi-misi .visi-misi article{
+    margin-right: 10px;
+}
+.content-visi-misi .visi-misi .visi {
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.content-visi-misi .visi-misi .visi h3 {
+    margin-bottom: 5px;
+}
+.content-visi-misi .visi-misi .misi h3{
+    margin-bottom: 5px;
+}
+.content-visi-misi .visi-misi .misi ol{
+    margin-left: 17px;
+}
+.content-visi-misi .visi-misi .misi ol li{
+    line-height: 20px;
+}
+.content-visi-misi .visi-misi .image-logo img{
+    width: 450px;
+}
+.content-visi-misi hr{
+    width: 50%;
+    text-align: center;
+    margin:40px 270px;
+}
+/* end content-visi-misi */
+
+
+/* start content visi-misi */
+article .content-program-kerja{
+    margin: 0px 120px;
+}
+article .program-kerja .headline{
+    text-align: center;
+    margin-bottom: 30px;
+}
+article .program-kerja .headline p{
+    color: #696969;
+    padding-top: 8px;
+}
+article .program-kerja .content-program-kerja{
+    display: flex;
+    justify-content: space-between;
+    
+}
+article .program-kerja .content-program-kerja .isi{
+    width: 360px;
+    height: 630px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 1px 8px 21px 2px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article .program-kerja .content-program-kerja img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.program-kerja .content-program-kerja .isi .kerja h4{
+    margin: 10px 0px;
+    text-align: center;
+}
+.program-kerja .content-program-kerja .isi .kerja p{
+    text-align: justify;
+}
+.program-kerja .content-program-kerja .isi .btn-selengkapnya a{
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #FF6000 20.67%, #FF1F00 78.21%);
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #FF6000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+.program-kerja .content-program-kerja .isi .btn-selengkapnya a:hover{
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background: transparent;
+    color:#FF6000;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #FF6000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    margin: 0px 60px;
+}
+.program-kerja .content-program-kerja .isi .berita1 p{
+    margin-bottom: 30px;
+}
+.program-kerja .content-program-kerja .isi .berita2 p{
+    margin-bottom: 14px;
+}
+.program-kerja .content-program-kerja .isi .berita3 p{
+    margin-bottom: 47px;
+}
+article .btn-informasi-lainnya{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+article .btn-informasi-lainnya a{
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #FF6000 20.67%, #FF1F00 78.21%);
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #FF6000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    transition: all 1s;
+}
+article .btn-informasi-lainnya a:hover{
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background: transparent;
+    color:#FF6000;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #FF6000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+/* end program kerja */
+
+/* content Tentang Kami */
+aside .headline{
+    text-align: left;
+    position: absolute;
+    right:250px;
+    top: 2300px;
+}
+aside .headline h1{
+    font-weight: 900;
+    font-size: 36px;
+}
+aside .headline p{
+    color: #696969;
+}
+aside .bg-cover {
+    background-image: url(../Image//asset/vector-bg.png);
+    width: 100%;
+    height: 1400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+aside .content-pict{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+aside .bg-cover .content-ketua{
+    display: flex;
+    justify-content: start;
+}
+aside .bg-cover .content-pict .ketua{
+    width: 380px;
+    padding: 200px 70px 0px;
+}
+aside .bg-cover .content-pict .ketua img{
+    width: 250px;
+}
+aside .bg-cover .content-pict .ketua .data-diri{
+    color: #FFF;
+    text-align: center;
+    padding-top: 8px;
+}
+aside .bg-cover .asset-game-controller img{
+    width: 500px;
+    position: absolute;
+    right:100px;
+    top: 2450px;
+}
+aside .bg-cover .wakil-ketua{
+    padding: 50px 70px;
+    display: flex;
+    justify-content: start;
+}
+aside .bg-cover .wakil-ketua img{
+    width: 250px;
+}
+aside .bg-cover .wakil-ketua .wakil-ketua1{
+    margin-right: 70px;
+}
+aside .bg-cover .wakil-ketua .wakil-ketua1 .data-diri{
+    color: #FFF;
+    text-align: center ;
+    padding-top: 8px;
+}
+aside .bg-cover .wakil-ketua .wakil-ketua2 .data-diri{
+    color: #FFF;
+    text-align: center ;
+    padding-top: 8px;
+}
+aside .bg-cover .sekretaris{
+    padding: 50px 50px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+aside .bg-cover .sekretaris img{
+    width: 250px;
+}
+aside .bg-cover .sekretaris .data-diri{
+    padding-top: 8px;
+}
+aside .bg-cover .sekretaris .sekretaris1, .sekretaris2{
+    margin-right: 50px;
+}
+aside .bg-cover .sekretaris .sekretaris1, .sekretaris2 .data-diri{
+    color: #FFF;
+    text-align: center ;
+}
+aside .bg-cover .sekretaris .bendahara1{
+    margin-right: 50px;
+}
+aside .bg-cover .sekretaris .bendahara1, .bendahara2 .data-diri{
+    color: #FFF;
+    text-align: center ;
+}
+aside .bg-cover .btn-selengkapnya{
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+aside .bg-cover .btn-selengkapnya a{
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background-color: #0E0E0E;
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #FF6000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+aside .bg-cover .btn-selengkapnya a:hover{
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    background-color: transparent;
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #fff;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+aside .bg-cover .content-pict hr{
+    width: 50%;
+    text-align: center;
+    margin:65px auto 10px;
+    color: #FFF;
+}
+
+/* footer */
+footer{
+    background: linear-gradient(90deg, #FF6000 20.67%, #FF1F00 78.21%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0px auto;
+    color: #FFF;
+    padding: 50px;
+}
+footer .logo{
+    margin:0px 0px 8px;
+}
+footer .logo img{
+    width: 70px;
+    height: 70px;
+}
+footer .isi{
+    display: flex;
+    justify-content: space-between;
+}
+footer .isi .keterangan {
+    width: 50%;
+}
+footer .isi h4{
+    padding-bottom: 8px;
+}
+
+footer .isi .keterangan h4{
+    font-size: 18px;
+}
+footer .isi .keterangan p{
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer .isi .keterangan p>ion-icon{
+    font-size: 28px;
+    margin-right: 12px;
+}
+
+footer .isi h4,a{
+    text-decoration: none;
+    color: #FFF;
+}
+footer .isi a:hover{
+    color: #0E0E0E;
+}
+footer article h4,a p{
+    padding-bottom: 10px;
+}
+footer .media-sosial{
+    display: flex;
+    justify-content: right;
+}
+footer .media-sosial a>ion-icon{
+    font-size: 30px;
+    margin-left: 20px;
+    color: #FFF;
+}
+footer .media-sosial a>ion-icon:hover{
+    font-size: 30px;
+    margin-left: 20px;
+    color: #0E0E0E;
+}
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* end Footer */
+/* end aside */
+
+
+/* humburger menu */
+.navbar .menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 18px;
+    justify-content: space-between;
+    position: relative;
+}
+.navbar .menu-toggle input{
+    position: absolute;
+    width: 29px;
+    height: 24px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+.navbar .menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px; 
+    transition: all 0.5s;
+}
+.navbar .menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.navbar .menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.navbar .menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+.navbar .menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+.navbar .menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* Responsive breakpoint*/
+
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    /* navbar */
+    header .navbar .logo img{
+        width: 46px;
+        height: 36px;
+        margin-right: 5px;
+    }
+    .navbar .logo .nav-brand h2{
+        font-size: 0.9em;
+    }
+    .navbar ul li{
+        font-size: 0.7em;
+    }
+    .navbar ul{
+        width: 70%;
+    }
+    .navbar ul li:nth-child(6) a{
+        padding: 8px;
+        font-size: 0.7em;
+        margin-left: 0px;
+    }
+    .navbar ul li:nth-child(6) a:hover{
+        padding: 8px;
+        font-size: 0.7em;
+    }
+    /* end navbar */
+
+    /* main content header bg */
+        main #beranda .content-bg{
+            background-size: cover ;
+            max-width: 768px;
+            height: 500px;
+        }
+        
+        .content-bg article.content-text-bg{
+            height: 450px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .content-bg article h1{
+            font-size: 1.8em;
+        }
+        .content-bg article h4{
+            font-size: 1em;
+            
+        }
+        .content-bg article p{
+            font-size: 0.7em;
+            
+        }
+        .content-bg article a{
+            margin-top: 5px;
+            font-size: 0.7em;
+            padding: 8px;
+        }
+        .content-bg article a:hover{
+            margin-top: 5px;
+            font-size: 0.7em;
+            padding: 8px;
+        }
+    /* end main content header bg */
+
+    
+
+    /* content divisi */
+    .content-divisi{
+        width: 60%;
+        height: 140px;
+        top: 430px;
+        left: 150px;
+    }
+    .content-divisi article{
+        text-align: center;
+    }
+    .content-divisi article h3{
+        padding-top: 20px;
+        font-size: 0.8em;
+    }
+    .content-divisi article p{
+        color: #696969;
+        padding-top: 5px;
+        font-size: 0.7em;
+    }
+    .content-image-divisi img{
+        width: 50px;
+    }
+    /* end content-divisi */
+
+    /* content-visi misi */
+    .content-visi-misi{
+        margin: 110px 30px;
+    }
+    .content-visi-misi .visi-misi{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-visi-misi .visi-misi .image-logo img{
+        margin-top: 10px;
+        width: 400px;
+    }
+    .content-visi-misi hr{
+        width: 50%;
+        text-align: center;
+        margin:40px 170px;
+    }
+    /* end visi-misi */
+
+    /* content program kerja */
+    article .content-program-kerja{
+        margin: 0px 30px;
+    }
+    article .program-kerja .content-program-kerja{
+        flex-direction: column;
+    }
+    article .program-kerja .content-program-kerja .isi{
+        width: 100%;
+        height: 610px;
+        margin-bottom: 20px;
+    }
+    article .program-kerja .content-program-kerja .isi img{
+        max-width: 100%;
+        height: 380px;
+    }
+    
+    /* aside tentang kami */
+    aside{
+        margin-top: 250px;
+    }
+    aside .headline{
+        top: 3600px;
+        left: 20px; 
+    }
+
+    aside .bg-cover .content-pict .asset-game-controller img{
+        top: 3900px;
+        width: 300px;
+        right: 20px; 
+    }
+    aside .bg-cover {
+        max-width: 100%;
+        height: 1700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    aside .bg-cover .content-pict .ketua{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    aside .bg-cover .content-pict .wakil-ketua{
+        display: flex;
+        justify-content: space-around;
+    }
+    aside .bg-cover .content-pict .wakil-ketua .wakil-ketua1{
+        margin-right: 0px;
+        
+    } 
+    aside .bg-cover .content-pict .sekretaris{
+        flex-wrap: wrap;
+    } 
+    aside .bg-cover .sekretaris .sekretaris1, .sekretaris2{
+        margin-right: 0px;
+    }
+    aside .bg-cover .sekretaris .bendahara1, .bendahara2{
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    aside .bg-cover .content-pict hr{
+        width: 70%;
+        margin: 30px auto 30px;
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    }
+    footer .isi .program-kerja, .tentang-kami{
+        margin-left: 15px;
+    }
+    footer .isi .keterangan p>ion-icon.location{
+        font-size: 60px;
+    }
+    footer .logo{
+        margin:0px 0px 8px;
+    }
+    footer .logo img{
+        width: 70px;
+        height: 70px;
+    }
+
+}
+/* ukuran smartphone */
+@media screen and (max-width: 576px) {
+    header .navbar{
+        height: 50px;
+    }
+    .header .logo{
+        z-index: 10;
+    }
+    .navbar .menu-toggle{
+        display: flex;
+        z-index: 99;
+    }
+    .navbar ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #0e0e0e;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(0%);
+        transition: all 1s;
+        z-index: -1;
+    }
+    .navbar ul.slide{
+        transform: translateX(100%);
+    }
+    .navbar ul li{
+        font-size: 0.9em;
+    }
+    .navbar ul li:nth-child(1){
+        margin-top: 70px;
+    }
+    .navbar ul li:nth-child(6) a{
+        padding: 8px;
+        font-size: 0.9em;
+        flex-direction: row;
+    }
+    .navbar ul li:nth-child(6) a:hover{
+        padding: 8px;
+        font-size: 0.9em;
+        flex-direction: row;
+    }
+    
+    .navbar .logo .nav-brand h2{
+        font-size: 1.2em;
+    }
+
+    /* main content header bg */
+    main #beranda .content-bg{
+        background-size: cover ;
+        max-width: 576px;
+        height: 300px;
+    }
+    .content-bg article.content-text-bg{
+        height: 300px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .content-bg article h1{
+        font-size: 1.2em;
+        margin-bottom: 3px;
+    }
+    .content-bg article h4{
+        font-size: 0.8em;
+        
+    }
+    .content-bg article p{
+        font-size: 0.6em;
+        line-height: 10px;
+    }
+    .content-bg article a{
+        margin-top: 3px;
+        font-size: 0.6em;
+        padding: 6px;
+    }
+    .content-bg article a:hover{
+        margin-top: 3px;
+        font-size: 0.5em;
+        padding: 5px;
+    }
+    /* end main content header bg */
+
+    /* content divisi */
+    .content-divisi{
+        width: 70%;
+        height: 120px;
+        top: 230px;
+        left: 90px;
+    }
+    .content-divisi article{
+        text-align: center;
+        
+    }
+    .content-divisi article h3{
+        padding-top: 15px;
+        font-size: 0.7em;
+    }
+    .content-divisi article p{
+        color: #696969;
+        padding-top: 5px;
+        font-size: 0.6em;
+    }
+    .content-image-divisi img{
+        width: 50px;
+    }
+    /* end content-divisi */
+
+    /* content-visi misi */
+    .content-visi-misi{
+        margin: 100px 30px;
+    }
+    .content-visi-misi .visi-misi{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-visi-misi .visi-misi .image-logo img{
+        margin-top: 10px;
+        width: 300px;
+    }
+    .content-visi-misi .headline h3,p{
+        font-size: 0.9em;
+    }
+    .content-visi-misi .visi-misi article .visi{
+        font-size: 0.9em;
+    }
+    .content-visi-misi .visi-misi article .misi{
+        font-size: 0.9em;
+    }
+    .content-visi-misi hr{
+        width: 50%;
+        text-align: center;
+        margin: 40px 120px;
+    }
+    /* end content visi-misi */
+
+     /* content program kerja */
+    article .content-program-kerja{
+        margin: 0px 30px;
+    }
+    article .program-kerja .content-program-kerja{
+        flex-direction: column;
+    }
+    article .program-kerja .headline p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    article .program-kerja .content-program-kerja .isi{
+        width: 100%;
+        height: 610px;
+        margin-bottom: 20px;
+    }
+    article .program-kerja .content-program-kerja .isi img{
+        max-width: 100%;
+        height: 380px;
+        transition: all 0.5 ease-in;
+        cursor: pointer;
+    }
+    article .program-kerja .content-program-kerja .isi img:hover{
+        transition: all 0.5s ease-in;
+    }
+    article .program-kerja .content-program-kerja .isi .btn-selengkapnya a{
+        font-size: 0.9em;
+    }
+    article .program-kerja .content-program-kerja .isi .btn-selengkapnya a:hover{
+        font-size: 0.9em;
+        transition: all 1s;
+    }
+    article .program-kerja .btn-informasi-lainnya a{
+        font-size: 0.9em;
+    }
+    /* end program kerja */
+
+
+    /* aside tentang kami */
+    aside{
+        margin-top: 100px;
+    }
+    aside .headline{
+        top: 3390px;
+        left: 20px; 
+        color: #0E0E0E;
+    }
+    aside .headline h1{
+        font-size: 1.6em;
+    }
+    aside .headline p{
+        font-size: 0.9em;
+        color: #FFF;
+    }
+    aside .bg-cover .content-pict .asset-game-controller img{
+        top: 3300px;
+        width: 200px;
+        right: 20px; 
+    }
+    aside .bg-cover {
+        max-width: 100%;
+        height: 2595px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    aside .bg-cover .content-pict .content-ketua .ketua{
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+        margin-left: 0px;
+    }
+    aside .bg-cover .content-pict .wakil-ketua{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 0px;
+    }
+    aside .bg-cover .content-pict .wakil-ketua .wakil-ketua1{
+        margin-right: 0px;  
+    } 
+    aside .bg-cover .content-pict .wakil-ketua .wakil-ketua2{
+        margin-top: 30px;  
+        padding-bottom: 0px;
+        
+    } 
+    aside .bg-cover .content-pict .sekretaris{
+        flex-wrap: wrap;
+        margin-top: 0px;
+        padding-top: 0px;
+    } 
+    aside .bg-cover .sekretaris .sekretaris1, .sekretaris2{
+        margin-right: 0px;
+        margin-top: 20px;
+    
+    }
+    aside .bg-cover .sekretaris .bendahara1 , .bendahara2{
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    aside .bg-cover .content-pict{
+        align-items: center;
+    }
+    aside .bg-cover .content-pict hr{
+        width: 80%;
+    }
+    /* footer */
+    footer{
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    }
+    footer .isi .keterangan{
+        margin-right: 15px;
+    }
+    footer .isi .keterangan h4{
+        font-size: 0.9em;
+    }
+    footer .isi .keterangan p{
+        font-size: 0.9em;
+    }
+    footer .isi .keterangan p>ion-icon.location{
+        font-size: 70px;
+    }
+    footer .isi .latihan-belajar{
+        font-size: 0.9em;
+    }
+    footer .isi .program-kerja{
+        font-size: 0.9em;
+    }
+    footer .isi .tentang-kami{
+        font-size: 0.9em;
+    }
+    footer .isi .program-kerja, .tentang-kami{
+        margin-left: 15px;
+    }
+    footer .logo{
+        margin:0px 0px 8px;
+    }
+    footer .logo img{
+        width: 70px;
+        height: 70px;
+    }
+}
